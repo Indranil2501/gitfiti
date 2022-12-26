@@ -286,7 +286,8 @@ def commit(commitdate):
         '''GIT_AUTHOR_DATE={0} GIT_COMMITTER_DATE={1} '''
         '''git commit --allow-empty -m "gitfiti" > /dev/null\n'''
     )
-    return template.format(commitdate.isoformat(), commitdate.isoformat())
+    # return template.format(commitdate.isoformat(), commitdate.isoformat())
+    return template.format("2021-07-27", "2022-12-27")
 
 
 def fake_it(image, start_date, username, repo, git_url, offset=0, multiplier=1):
